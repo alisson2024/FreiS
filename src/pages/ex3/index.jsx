@@ -6,6 +6,29 @@ import { useState } from 'react';
 
 
 export default function Ex1() {
+const[acaiPequeno,setAcaiPequeno]=useState(0)
+const[acaiMedio,setAcaiMedio]=useState(0)
+const[acaiGrande,setAcaiGrande]=useState(0)
+const[respostaAcai,setRespostaAcai]=useState('')
+
+
+function pedidoacai () 
+{
+  let piq = 13.5
+  let med = 15
+  let grd = 17.50
+
+  let p = piq * acaiPequeno
+  let m = med * acaiMedio
+  let g = grd * acaiGrande
+
+  let res = p + m + g
+
+  setRespostaAcai(res)
+
+
+}
+
   return (
     <div className="pagina-ex3 pagina">
 
@@ -39,19 +62,19 @@ export default function Ex1() {
           <div className='sub'>
            
            <div className='cxa'> <h3>Quantidade pequeno</h3>
-            <input type="text" /></div>
+            <input type="text" value={acaiPequeno} onChange={ e => setAcaiPequeno(e.target.value)} /></div>
 
             <div className='cxa'><h3>Quantidade médio</h3>
-            <input type="text" /></div>
+            <input type="text" value={acaiMedio} onChange={ e => setAcaiMedio(e.target.value)} /></div>
 
             <div className='cxa'><h3>Quantidade grande</h3>
-            <input type="text" />
+            <input type="text" value={acaiGrande} onChange={ e => setAcaiGrande(e.target.value)} />
             </div> </div>
           
-           <button> Executar </button> </div>
+           <button onClick={pedidoacai}> Executar </button> </div>
        </div>
 
-        <h3 className='resp'>Resultado: O total é R$ 0,00</h3>
+        <h3 className='resp'>Resultado: O total é R$ {respostaAcai}</h3>
       </div>
 
     </div>

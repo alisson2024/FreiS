@@ -7,6 +7,25 @@ import { useState } from 'react';
 
 
 export default function Ex1() {
+
+
+    const [Kg, setKg] = useState(0);
+    const [respostagrama, setRespostaGrama] = useState('');
+    
+    
+    
+    
+    
+    function Pedido (){
+            
+        let total=Kg*1000
+         setRespostaGrama(total)
+        }
+    
+
+
+
+
     return (
         <div className="pagina-ex2 pagina">
 
@@ -36,14 +55,13 @@ export default function Ex1() {
                 </div>
 
                 <div className='final'>
-                    <h3>Valor em gramas</h3>
-                    <input type="text" />
-                    
+                    <h3>Valor em kg</h3>
+                    <input type="text" value={Kg}  onChange={e => setKg(e.target.value)} />
 
-                    <button> Executar </button>
+                    <button onClick={Pedido}> Executar </button>
                 </div>
 
-                <h3 className='resp'>Resultado: O total é R$ 0,00</h3>
+                <h3 className='resp'>Valor em Gramas: {respostagrama} g.</h3>
             </div>
 
         </div>
