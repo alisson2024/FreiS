@@ -1,7 +1,10 @@
 import './index.scss';
 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
+const [valorPedido,setValorPedido]= useState(0);
+const [cupom,setCupom]= useState(0);
 
 
 export default function Ex1() {
@@ -35,9 +38,9 @@ export default function Ex1() {
 
                 <div className='final'>
                     <h3>Informe o valor do pedido</h3>
-                    <input type="text" />
+                    <input type="text" value={valorPedido} onChange={setValorPedido} />
                     <h3>Informe o valor do cupom</h3>
-                    <input type="text" />
+                    <input type="text" value={cupom} onChange={setCupom}/>
 
                     <button> Executar </button>
                 </div>

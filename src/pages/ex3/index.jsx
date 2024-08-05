@@ -1,6 +1,7 @@
 import './index.scss';
 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
 
@@ -33,19 +34,22 @@ export default function Ex1() {
           <p>Implementar um programa em Javascript para calcular o <b> total de uma venda de açaí</b> a partir das quantidades compradas para cada tamanho:<b> pequeno, médio e grande,</b> sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente</p>
         </div>
 
-        <div className='final'>
+          <div className='haha'>
+          <div className='final'>
           <div className='sub'>
-            <h3>Quantidade pequeno</h3>
-            <input type="text" />
+           
+           <div className='cxa'> <h3>Quantidade pequeno</h3>
+            <input type="text" /></div>
 
-            <h3>Quantidade médio</h3>
-            <input type="text" />
+            <div className='cxa'><h3>Quantidade médio</h3>
+            <input type="text" /></div>
 
-            <h3>Quantidade grande</h3>
+            <div className='cxa'><h3>Quantidade grande</h3>
             <input type="text" />
-          </div>
-           <button> Executar </button>
-        </div>
+            </div> </div>
+          
+           <button> Executar </button> </div>
+       </div>
 
         <h3 className='resp'>Resultado: O total é R$ 0,00</h3>
       </div>
