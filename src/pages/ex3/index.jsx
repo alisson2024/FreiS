@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-export default function Ex1() {
+export default function Ex3() {
 const[acaiPequeno,setAcaiPequeno]=useState(0)
 const[acaiMedio,setAcaiMedio]=useState(0)
 const[acaiGrande,setAcaiGrande]=useState(0)

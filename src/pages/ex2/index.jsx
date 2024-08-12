@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 
-export default function Ex1() {
+export default function Ex2() {
 
 
     const [Kg, setKg] = useState(0);

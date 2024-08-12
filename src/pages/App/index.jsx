@@ -53,6 +53,23 @@ export default function App() {
           <p>Exercício 03</p>
         </Link>
 
+        
+        <Link className='ex' to='/ex10'>
+          <div className='cubo10'>
+          </div>
+          <p>Valor total por quantidade</p>
+          <p>Exercício 10</p>
+        </Link>
+
+
+        
+        <Link className='ex' to='/ex11'>
+          <div className='cubo11'>
+          </div>
+          <p>Tabuada</p>
+          <p>Exercício 11</p>
+        </Link>
+
 
       </div>
     </div>
