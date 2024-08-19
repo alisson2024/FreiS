@@ -23,41 +23,40 @@ export default function Ex10() {
     const [resultado, setResultado] = useState('');
 
 
-
-
-
-
-
     function imc() {
 
 
-
-      
-      let total =  (peso/altura)**2 
+        let x=''
+        
+      let total =  peso/(altura **2)
+    
 
 if (total < 18.5){
-    setResultado(`peso: ${peso} | altura: ${altura} | + 'Magreza' `)
+    x=(`peso: ${peso} | altura: ${altura} |  Situação: Magreza `)
 }
 
-else if (total > 18.5){
-    setResultado(`peso: ${peso} | altura: ${altura} | + 'Normal'`  )
+ if (total > 18.5  && total <= 24.9){
+
+    x=(`peso: ${peso} | altura: ${altura} |  Situação: Peso Normal`  )
 }
 
-else if (total > 24.9){
-    setResultado(`peso: ${peso} | altura: ${altura} | total + 'Sobrepeso'` )
+if (total > 24.9  && total <= 29.9  ){
+    x=(`peso: ${peso} | altura: ${altura} |  Situação: Sobrepeso` )
 }
 
-else if (total > 39.9){
-    setResultado(`peso: ${peso} | altura: ${altura} | 'Obesidade'`)
+ if (total > 30 && total <= 39.9 ){
+    x=(`peso: ${peso} | altura: ${altura} | Situação: Obesidade`)
 }
 
 
-else if (total > 40){
-    setResultado( `peso: ${peso} | altura: ${altura} | 'Obesidade grave '`)
+ if (total > 40){
+    x=( `peso: ${peso} | altura: ${altura} | Situação: Obesidade grave `)
 }
 
-    
-    }
+
+setResultado([...resultado,x])
+
+}
 
 
 
@@ -83,7 +82,7 @@ else if (total > 40){
 
             <div className='pagEx11'>
                 <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-                <h1> Exercício 11 - tabuada</h1>
+                <h1> Exercício 10 - imc</h1>
                 <div className='linha1'> </div>
                 <div className='meio'>
                     <p>Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação</p>
@@ -99,7 +98,12 @@ else if (total > 40){
                     <button onClick={imc}> Executar </button>
                 </div>
 
-                <h3 className='resp'> {resultado}</h3>
+                <h3 className='resp'> {`${resultado} `}</h3>
+
+
+                
+
+            
             </div>
 
         </div>
@@ -107,3 +111,4 @@ else if (total > 40){
     );
 
 }
+
