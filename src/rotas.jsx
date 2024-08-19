@@ -5,9 +5,15 @@ import Naoencontrado from './pages/naoencontrado';
 import Ex1 from './pages/ex1';
 import Ex2 from './pages/ex2';
 import Ex3 from './pages/ex3';
-import Ex4 from './pages/ex4'
+import Ex4 from './pages/ex4';
+import Ex5 from './pages/ex5';
+import Ex6 from './pages/ex6';
+import Ex7 from './pages/ex7';
+import Ex8 from './pages/ex8';
+import Ex9 from './pages/ex9';
 import Ex10 from './pages/ex10';
 import Ex11 from './pages/ex11';
+import Ex12 from './pages/ex12';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
