@@ -14,6 +14,7 @@ import Ex9 from './pages/ex9';
 import Ex10 from './pages/ex10';
 import Ex11 from './pages/ex11';
 import Ex12 from './pages/ex12';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -33,8 +34,6 @@ export default function Navegacao() {
                 <Route path='/ex7' element={<Ex7 />} />
                 <Route path='/ex8' element={<Ex8 />} />
                 <Route path='/ex9' element={<Ex9 />} />
-                 
-
                 <Route path='/ex10' element={<Ex10 />} />
                 <Route path='/ex11' element={<Ex11 />} />
                 <Route path='/ex12' element={<Ex12 />} />

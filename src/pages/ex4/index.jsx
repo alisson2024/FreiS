@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-export default function Ex3() {
+export default function Ex4() {
     const [nomeLivro,setNomeLivro] = useState('')
     const [totalPag,setTotalPag] = useState(0)
     const [tempo,setTempo] = useState(0)
@@ -14,11 +14,11 @@ export default function Ex3() {
 
     function tempodolivro() {
 
-        let calc = (tempo*3600)/totalPag
+        let calc = (tempo*totalPag)/3600
 
-        setRespostaLivro(calc)
+        setRespostaLivro(calc.toFixed(2));
 
-        respostaLivro.push(respostaLivro)
+        
 
     }
 

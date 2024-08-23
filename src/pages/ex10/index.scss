@@ -1,52 +1,54 @@
-.pagina-ex1 {
+.pagina-ex10 {
+    font-family: 'Roboto', 'Arial';
 
-    background-color: #B75333;
-    ;
-    .pagEx1 {
-        h1 {
-            margin-left: 120px;
-            margin-top: 40px;
-        }
+    .exercicio {
+        padding: 60px;
 
-        .seta {
-            margin-left: 65px;
-            display: flex;
-            position: absolute;
-        }
+        .titulo {
+            .texto {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
 
-        .linha1 {
-            margin: 20px auto;
-            width: 91%;
-            height: 4px;
-            background: #FFCE37;
-            border-radius: 12px;
-        }
+                h2 {
+                    margin-left: 10px;
+                }
+            }
 
-        .meio {
-            background-color: rgb(240, 241, 241);
-            width: 1380px;
-            margin-left: 75px;
-            padding-top: 90px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 90px;
-            border-radius: 10px;
-            background-color: #ffffff;
-
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 100%;
-                text-align: center;
-
-                color: #383131;
-
+            .faixa {
+                background-color: brown;
+                height: 4px;
             }
         }
 
-        .final {
+        .descricao {
+            background-color: white;
+            height: 215px;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+           /* .campos {
+                width: 476px;
+                height: 170px;
+                padding: 20px;
+
+                text-align: start;
+
+                background-color: white;
+                border-radius: 12px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+
+        .formulario {
+            display: flex;
+            margin-top: 40px;
+           .campos {
+ 
             background-color: rgb(240, 241, 241);
             width: 480px;
             padding-left: 40px;
@@ -57,39 +59,60 @@
             background-color: #ffffff;
             margin-bottom: 20px;
             line-height: 2.5;
-            input {
-                border-radius: 13px;
-                border-style: solid;
-                border-color: #dfdfdf;
-                border-width: 2px;
-                padding: 10px;
-                color: #606060;
-                font: 400px 22px "Verdana";
-                outline: none;
-                min-width: 400px;
+
+                .entradas{
+                    display: flex;
+                    gap: 20px;
+                }
+
+                .campo {
+                    margin-bottom: 20px;
+
+                    label {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        width: 100%;
+                        margin-top: 8px;
+                        border-radius: 8px;
+                        border-style: none;
+                        border: 2px solid #c3c3c3;
+                        font-size: 24px;
+                    }
+                }
             }
 
-            button {
-                background: #6278F7;
+            .executar {
+                color: white;
+                font-size: 16px;
+                text-decoration: none;
+                
+                float: right;
+                
+                width: 200px;
+                padding: 15px 20px;
+
+                background-color: #6278F7;
                 border-radius: 12px;
-                margin-top: 25px;
-                margin-left: 235px;
-                padding: 14px 50px;
-                color: #fff;
-                border-radius: 10px;
-                font: 500px 20px;
-                outline: none;
             }
 
+            .resultado {
+                
+                .item{
+                    display: flex;
+                    gap: 10px;
 
-        }
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                    padding: 20px;
 
-        .resp {
-            padding-left: 630px;
-            height: 100px;
-            
+                    background-color: white;
+                    border-radius: 12px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
         }
     }
-
-
 }
