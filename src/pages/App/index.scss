@@ -1,10 +1,16 @@
-
-
+.pagina-app{
+    background-color:#F5F6FA ;
+ .treino{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .todosEx {
 
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 150px;
 
     .sla {
 
@@ -17,7 +23,7 @@
     .ex {
         display: flex;
         justify-content: center;
-        
+        background-color: white;
      
         
 
@@ -46,7 +52,7 @@
 
             width: 100px;
             height: 100px;
-            background-color: #1bb9f8;
+            background-color: #37FFF3;
             border-radius: 10px;
         }
 
@@ -149,4 +155,5 @@
 
 
     }
+ }
 }

@@ -136,7 +136,7 @@ export default function Ex11() {
                                         Altura: {linha.altura} | Peso: {linha.peso} | Situação: {linha.situacao}
                                     </p>
                                     <i class="fa-solid fa-pen-to-square" onClick={() => alterarItem(pos)}></i> &nbsp;
-                                    <i class="fa-solid fa-xmark" onClick={() => removerItem(pos)} ></i> &nbsp;
+                                    <i class="fa-solid fa-xmark" onClick={() => removerItem(pos)} > <img src="/assets/images/remove.png" alt="" width='30px'/> </i> &nbsp;
                                 </div>
                             )
                             )

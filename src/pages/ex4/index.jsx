@@ -6,9 +6,9 @@ import { useState } from 'react';
 
 
 export default function Ex4() {
-    const [nomeLivro,setNomeLivro] = useState('')
-    const [totalPag,setTotalPag] = useState(0)
-    const [tempo,setTempo] = useState(0)
+    const [nomeLivro,setNomeLivro] = useState()
+    const [totalPag,setTotalPag] = useState()
+    const [tempo,setTempo] = useState()
     const [respostaLivro,setRespostaLivro] = useState('')
 
 
@@ -53,20 +53,21 @@ export default function Ex4() {
                     <div className='final'>
                         <div className='sub'>
 
-                            <div className='cxa'> <h3>Nome do livro</h3>
+                            <h3>Nome do livro</h3>
                                 <input type="text" value={nomeLivro} onChange={e => setNomeLivro (e.target.value)} />
-                            </div>
+                            
 
-                            <div className='cxa'><h3>Total de paginas</h3>
+                            <h3>Total de paginas</h3>
                                 <input type="text" value={totalPag} onChange={e => setTotalPag (e.target.value)} />
-                            </div>
+                            
 
-                            <div className='cxa'><h3>Tempo em segundos de leitura</h3>
-                                <input type="text" value={tempo} onChange={e => setTempo (e.target.value)} />
-                            </div>
-                        </div>
+                            <h3>Tempo em segundos de leitura</h3>
+                                <input type="text"  value={tempo} onChange={e => setTempo (e.target.value)} />
+                            
+                        
 
                         <button onClick={tempodolivro}> Executar </button>
+                        </div>
                     </div>
                 </div>
 

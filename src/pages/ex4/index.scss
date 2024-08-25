@@ -1,6 +1,8 @@
 .pagina-ex4 {
 
-    background-color: #f8f8f8;
+    background-color: #F5F6FA;
+    
+
     
     .pagEx4 {
         h1 {
@@ -53,22 +55,10 @@
         }
 
         .final {
-           
+           margin-left: 450px;
+           margin-top: 100px;
 
-                display: flex;
-                justify-content: center;
-                align-items: start;
-                background-color: rgb(240, 241, 241);
-                width: 880px;
-                height: 200px;
-                
-                padding-top: 20px;
-                margin-left: 100px;
-                margin-top: 35px;
-                border-radius: 10px;
-                background-color: #ffffff;
-                margin-bottom: 20px;    
-
+               
 
                 
             
@@ -76,31 +66,31 @@
 
                 
                 .sub { 
-                display: flex;
-                gap: 50px;
-                margin-bottom: 40px;
-                height: 10px;
-                line-height: 40px;
-
+                    display: flex;
+                    flex-direction: column;
+                    width: 600px; /* ajuste conforme necessário */
+                    background-color: white; /* fundo branco */
+                    padding: 50px 50px 20px 50px; /* espaçamento interno */
+                    border: 1px solid #ffffff; /* borda opcional */
+                    border-radius: 8px; /* cantos arredondados */
 
                 input {
-                    border-radius: 20px;
-                    border-style: solid;
-                    border-color: #dfdfdf;
+                    border-radius: 10px;
+                    border-style: solid ;
                     border-width: 2px;
-                    color: #606060;
+                    color: #383838;
                     font: 400px 22px "Verdana";
                     outline: none;
-                    padding: 12px 0px;
+                    padding: 8px 10px 8px 10px;
+                    margin-bottom: 15px;
+                    
 
                 }
-            }
+            
 
             button {
-                position: absolute;
-                right: 510px;
-                top: 571px;
-
+                margin-left: 270px;
+                margin-top: 50px;
                 background: #6278F7;
                 border-radius: 12px;
                 height: 60px;
@@ -111,13 +101,13 @@
                 outline: none;
             }
 
-
+        }
 
         }
 
         .resp {
-            
-            padding-left: 840px;
+            margin-top: 20px;
+            padding-left: 720px;
             height: 100px;
         }
     }
