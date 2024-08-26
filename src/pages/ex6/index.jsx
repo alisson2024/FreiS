@@ -2,6 +2,7 @@ import './index.scss';
 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { Cabecalho } from '../../components/cabecalho/index';
 
 
 
@@ -33,22 +34,7 @@ export default function Ex6() {
     return (
         <div className="pagina-ex6 pagina">
 
-            <header className='cabecalho'>
-                <img src="/assets/images/image.png" alt="" width="42px" />
-                <h1 className='titulo'>React FreiS </h1>
-
-                <ul>
-                    <li className='ir-app'>
-                        <Link to='/app' className='ini'> inicio </Link>
-                    </li>
-                </ul>
-                <ul>
-                    <li className='ir-sobre'>
-                        <Link to='/sobre'> Sobre </Link>
-                    </li>
-                </ul>
-
-            </header>
+            <Cabecalho />
 
             <div className='pagEx6'>
                 <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>

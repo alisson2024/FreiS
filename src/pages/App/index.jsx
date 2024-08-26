@@ -1,27 +1,115 @@
+import { Cabecalho } from '../../components/cabecalho';
 import './index.scss';
 
 import { Link } from 'react-router-dom';
 
 export default function App() {
+  let cards = [
+    {
+      'link_card': '/ex1',
+      'cor_card': 'amarelo',
+      'titulo': 'Cupom de desconto',
+      'subtitulo': 'Exercicio 01',
+    },
+
+    {
+      'link_card': '/ex2',
+      'cor_card': 'verdeClaro',
+      'titulo': 'Converter Kg/gramas',
+      'subtitulo': 'Exercicio 02',
+    },
+
+    {
+      'link_card': '/ex3',
+      'cor_card': 'azulBebe',
+      'titulo': 'Valor total por quantidade',
+      'subtitulo': 'Exercicio 03',
+    },
+
+
+    {
+      'link_card': '/ex4',
+      'cor_card': 'azulMarinho',
+      'titulo': 'Leitura de livro',
+      'subtitulo': 'Exercicio 04',
+    },
+
+
+    {
+      'link_card': '/ex5',
+      'cor_card': 'roxoClaro',
+      'titulo': 'Média de notas',
+      'subtitulo': 'Exercicio 05',
+    },
+
+
+
+    {
+      'link_card': '/ex6',
+      'cor_card': 'laranjaEscuro',
+      'titulo': 'Salário líquido',
+      'subtitulo': 'Exercicio 06',
+    },
+
+
+    {
+      'link_card': '/ex7',
+      'cor_card': 'verdeBebe',
+      'titulo': 'Cores primárias',
+      'subtitulo': 'Exercicio 07',
+    },
+
+
+
+    {
+      'link_card': '/ex8',
+      'cor_card': 'preto',
+      'titulo': 'Temperatura',
+      'subtitulo': 'Exercicio 08',
+    },
+
+
+
+    {
+      'link_card': '/ex9',
+      'cor_card': 'cinza',
+      'titulo': 'Sorveteria',
+      'subtitulo': 'Exercicio 09',
+    },
+
+
+    {
+      'link_card': '/ex10',
+      'cor_card': 'marromClaro',
+      'titulo': 'Calculo de IMC com histórico',
+      'subtitulo': 'Exercicio 10',
+    },
+
+
+    {
+      'link_card': '/ex11',
+      'cor_card': 'roxoEscuro',
+      'titulo': 'Tabuada',
+      'subtitulo': 'Exercicio 11',
+    },
+
+
+    {
+      'link_card': '/ex12',
+      'cor_card': 'amarelo',
+      'titulo': 'Comparador de pessoas',
+      'subtitulo': 'Exercicio 12',
+    }
+
+  ]
+
+ 
+
+
   return (
     <div className="pagina-app pagina">
 
-      <header className='cabecalho'>
-        <img src="/assets/images/image.png" alt="" width="42px" />
-        <h1 className='titulo'>React FreiS </h1>
-        <ul>
-          <li className='ir-app'>
-            <Link to='/app'> inicio </Link>
-          </li>
-        </ul>
-        <ul>
-          <li className='ir-sobre'>
-            <Link to='/sobre'> Sobre </Link>
-          </li>
-        </ul>
-
-
-      </header>
+      <Cabecalho />
 
       <section className='treino'>
         <h1>Escolha um treino...</h1>
@@ -30,111 +118,35 @@ export default function App() {
       <div className='todosEx'>
 
 
-        <div className='sla'>
-          <Link className='ex' to='/ex1'>
-            <div className='cubo1'>
-            </div>
-            <p>Cupom de desconto</p>
-            <p>Exercício 01</p>
-          </Link>
-
-
-
-          <Link className='ex' to='/ex2'>
-            <div className='cubo2'>
-            </div>
-            <p>Converter Kg/gramas</p>
-            <p>Exercício 02</p>
-          </Link>
-
-
-          <Link className='ex' to='/ex3'>
-            <div className='cubo3'>
-            </div>
-            <p>Valor total por quantidade</p>
-            <p>Exercício 03</p>
-          </Link>
-
-
-
-          <Link className='ex' to='/ex4'>
-            <div className='cubo4'>
-            </div>
-            <p>Leitura de livro</p>
-            <p>Exercício 04</p>
-          </Link>
-
-          <Link className='ex' to='/ex5'>
-            <div className='cubo5'>
-            </div>
-            <p>Média de notas</p>
-            <p>Exercício 05</p>
-          </Link>
-        </div>
-
-        <div className='sla'>
-          <Link className='ex' to='/ex6'>
-            <div className='cubo6'>
-            </div>
-            <p>Salário liquido</p>
-            <p>Exercício 06</p>
-          </Link>
-
-
-
-          <Link className='ex' to='/ex7'>
-            <div className='cubo7'>
-            </div>
-            <p>Cores primárias</p>
-            <p>Exercício 07</p>
-          </Link>
-
-
-
-          <Link className='ex' to='/ex8'>
-            <div className='cubo8'>
-            </div>
-            <p>temperatura</p>
-            <p>Exercício 08</p>
-          </Link>
-
-
-
-
-          <Link className='ex' to='/ex9'>
-            <div className='cubo9'>
-            </div>
-            <p>Sorveteria</p>
-            <p>Exercício 09</p>
-          </Link>
-
-
-          <Link className='ex' to='/ex10'>
-            <div className='cubo10'>
-            </div>
-            <p>Calculo IMC com hístorico</p>
-            <p>Exercício 10</p>
-          </Link>
-        </div>
-        <div className='sla'>
-          <div className='sla'></div>
-          <Link className='ex' to='/ex11'>
-            <div className='cubo11'>
-            </div>
-            <p>Tabuada</p>
-            <p>Exercício 11</p>
-          </Link>
-
-
-          <Link className='ex' to='/ex12'>
-            <div className='cubo12'>
-            </div>
-            <p>Comparador de pessoas</p>
-            <p>Exercício 12</p>
-          </Link></div>
-
+        {
+          cards.map(
+            card =>
+              <Card
+                link_card={card.link_card}
+                cor_card={card.cor_card}
+                titulo={card.titulo}
+                subtitulo={card.subtitulo}
+              />
+          )
+        }
 
       </div>
+
     </div>
+
   )
+}
+
+
+function Card({ link_card, cor_card, titulo, subtitulo }) {
+  return (
+    <Link to={link_card} className='link'>
+      <div className='card'>
+        <div className={`retangulo ${cor_card}`} />
+        <h3 className='titulo'>{titulo}</h3>
+        <h4 className='subtitulo'>{subtitulo}</h4>
+      </div>
+    </Link>
+
+  );
 }

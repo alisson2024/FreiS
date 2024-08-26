@@ -1,159 +1,96 @@
 .pagina-app{
     background-color:#F5F6FA ;
+  
+
  .treino{
     padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.todosEx {
-
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 150px;
-
-    .sla {
-
-        display: flex;
-        flex-direction: row;
-        width: 30px;
-        gap: 55px;
     }
-    
-    .ex {
+    .todosEx {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+
+    .card {
+        width: 215px;
+        height: 160px;
+        border-radius: 12px;
+
+        text-align: center;
+        align-content: center;
         background-color: white;
-     
-        
+        text-decoration: none;
 
-        .cubo1 {
-        
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #d5eb74;
-            border-radius: 10px;
+        .retangulo {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            height: 60px;
+            width: 60px;
+            border-radius: 12px;
         }
 
-        .cubo2 {
-            margin: 0px 50px;
-
-
-            width: 100px;
-            height: 100px;
-            background-color: #46c00e;
-            border-radius: 10px;
+       .amarelo{
+        background-color: #FFCE37;
         }
 
-        .cubo3 {
-            margin: 0px 50px;
+        .verdeClaro {
+            background-color: #B3FF37;
+        }
 
-            width: 100px;
-            height: 100px;
+        .azulBebe {
             background-color: #37FFF3;
-            border-radius: 10px;
         }
 
-
-        .cubo4 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #1bb9f8;
-            border-radius: 10px;
+        .azulMarinho {
+            background-color: #37B7FF;
         }
 
-        .cubo5 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #e61bf8;
-            border-radius: 10px;
+        .roxoClaro {
+            background-color: #CB37FF;
         }
 
+        .laranjaEscuro {
+            background-color: #FF5B37;
+        }
 
+        .verdeBebe {
+            background-color:#37FFAB;
+        }
+
+        .preto {
+            background-color: #151515;
+        }
+
+        .cinza {
+            background-color: #D0D0D0;
+        }
+
+        .marromClaro {
+            background-color: #B75333;
+        }
+
+        .roxoEscuro {
+            background-color: #6533B7;
+        }
         
-        .cubo6 {
-            margin: 0px 50px;
+       
 
-            width: 100px;
-            height: 100px;
-            background-color: #f58403;
-            border-radius: 10px;
+
+
+        .titulo {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #383131;
         }
 
-
-        .cubo7 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #1bf89c;
-            border-radius: 10px;
+        .subtitulo {
+            font-size: 16px;
+            font-weight: lighter;
+            margin-top: 10px;
+            color: #383131;
         }
-
-
-        .cubo8 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #000000;
-            border-radius: 10px;
-        }
-
-
-        .cubo9 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #7b7b7b;
-            border-radius: 10px;
-        }
-
-
-
-
-        .cubo10 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color: #ff6600;
-            border-radius: 10px;
-        }
-
-
-        .cubo11 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color:#6533B7;
-            ;
-            border-radius: 10px;
-        }
-
-
-        .cubo12 {
-            margin: 0px 50px;
-
-            width: 100px;
-            height: 100px;
-            background-color:#e9e50e;
-            ;
-            border-radius: 10px;
-        }
-
-
-
-
-
     }
- }
-}
+    }
+
+}   
