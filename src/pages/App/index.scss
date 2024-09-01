@@ -1,4 +1,4 @@
-.pagina-app{
+/*.pagina-app{
     background-color:#F5F6FA ;
   
 
@@ -7,9 +7,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
     }
+
     .todosEx {
         display: flex;
-        flex-wrap: wrap;
+       max-width: 1440px;
 
     .card {
         width: 215px;
@@ -20,7 +21,7 @@
         align-content: center;
         background-color: white;
         text-decoration: none;
-
+          
         .retangulo {
             margin-left: 50%;
             transform: translateX(-50%);
@@ -94,3 +95,74 @@
     }
 
 }   
+
+*/
+
+
+
+.pagina-app {
+    background-color: #F5F6FA;
+}
+
+.treino {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.todosEx {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 5 colunas de largura igual */
+    gap: 60px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza a grid */
+    max-width: 1440px;
+    margin-left: 350px;
+}
+
+.card {
+    width: 215px;
+    height: 160px;
+    border-radius: 12px;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.retangulo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+}
+
+/* Estilos para os retângulos coloridos */
+.amarelo { background-color: #FFCE37; }
+.verdeClaro { background-color: #B3FF37; }
+.azulBebe { background-color: #37FFF3; }
+.azulMarinho { background-color: #37B7FF; }
+.roxoClaro { background-color: #CB37FF; }
+.laranjaEscuro { background-color: #FF5B37; }
+.verdeBebe { background-color: #37FFAB; }
+.preto { background-color: #151515; }
+.cinza { background-color: #D0D0D0; }
+.marromClaro { background-color: #B75333; }
+.roxoEscuro { background-color: #6533B7; }
+
+.titulo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #383131;
+}
+
+.subtitulo {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+    color: #383131;
+}

@@ -13,14 +13,18 @@ export default function Ex7() {
 
 
     function VerificarCor() {
-
-        if(cor1='amarelo'){
-            setResposta.send('true')
+        if ((cor1 === 'amarelo' && cor2 === 'azul') || (cor1 === 'azul' && cor2 === 'amarelo')) {
+            setResposta('True');
         }
-        
-       
-        
-
+        else if ((cor1 === 'amarelo' && cor2 === 'vermelho') || (cor1 === 'vermelho' && cor2 === 'amarelo')) {
+            setResposta('True');
+        }
+        else if ((cor1 === 'azul' && cor2 === 'vermelho') || (cor1 === 'vermelho' && cor2 === 'azul')) {
+            setResposta('True');
+        }
+        else {
+            setResposta('Combinação inválida ou cores iguais');
+        }
     }
 
     return (
@@ -33,6 +37,7 @@ export default function Ex7() {
                 <div className='linha3'> </div>
                 <div className='meio'>
                     <p>Implementar um programa em javascript para verificar se duas cores são primárias</p>
+                </div>
                 <div className='inpu'>
                     <div className='final'>
                         <div className='sub'>
@@ -47,15 +52,15 @@ export default function Ex7() {
                             
                         
 
-                        <button onClick={VerificarCor}> Executar </button>
+                         <button onClick={VerificarCor}> Executar </button>
                         </div>
                     </div>
                 </div>
 
                 <h3 className='resp'> As duas cores são primárias? {resposta} </h3>
-            </div>
+            
 
-        </div>
+             </div>
 
         </div>
 
