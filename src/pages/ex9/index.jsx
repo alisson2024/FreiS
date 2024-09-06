@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 export default function Ex8() {
@@ -29,17 +30,29 @@ export default function Ex8() {
         setResposta(total.toFixed(2));
     }
 
+
+    let exer = [
+        {
+          titulo: 'Exercício 09 - Sorveteria',
+          cor_linha: 'cinza',
+          mensagem: 'Implementar um programa em javascript que calcule o total a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de 100g é R$ 3,50 mas se o total de gramas for a partir de 1kg, o preço das 100g diminui 50 centavos.',
+        },
+    ];
+
     return (
         <div className="pagina-ex9 pagina">
              <Cabecalho />
 
-            <div className='pagEx9'>
-                <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-                <h1> Exercício 09 - Sorveteria </h1>
-                <div className='linha3'> </div>
-                <div className='meio'>
-                    <p> Implementar um programa em javascript que <b> calcule o total </b> a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b> 100g é R$ 3,50 <br /> </b>                                                         mas se o total de gramas for a partir de 1kg, o preço das 100g <b>diminui</b> 50 centavos. </p>
-                </div>
+             {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
 
                 <div className='inpu'>
                     <div className='final'>
@@ -58,7 +71,6 @@ export default function Ex8() {
 
              </div>
 
-        </div>
 
     );
 

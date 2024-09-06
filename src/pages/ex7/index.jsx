@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 export default function Ex7() {
@@ -27,17 +28,30 @@ export default function Ex7() {
         }
     }
 
+
+    let exer = [
+        {
+          titulo: 'Exercício 07 - Cores primárias',
+          cor_linha: 'verdeBebe',
+          mensagem: 'Implementar um programa em javascript para verificar se duas cores são primárias',
+        },
+    ];
+
     return (
         <div className="pagina-ex7 pagina">
              <Cabecalho />
 
-            <div className='pagEx7'>
-                <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-                <h1> Exercício 07 - Cores primárias</h1>
-                <div className='linha3'> </div>
-                <div className='meio'>
-                    <p>Implementar um programa em javascript para verificar se duas cores são primárias</p>
-                </div>
+             {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
+           
                 <div className='inpu'>
                     <div className='final'>
                         <div className='sub'>
@@ -60,7 +74,7 @@ export default function Ex7() {
                 <h3 className='resp'> As duas cores são primárias? {resposta} </h3>
             
 
-             </div>
+            
 
         </div>
 

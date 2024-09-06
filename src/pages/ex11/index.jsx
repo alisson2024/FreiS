@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 
@@ -28,19 +29,29 @@ function tabuada (){
     }
 
 
+    let exer = [
+      {
+        titulo: 'Exercício 11 - Tabuada',
+        cor_linha: 'roxoEscuro',
+        mensagem: 'Implemente um programa em Javascript que escreva a tabuada de um número informado pelo usuário. A mensagem deve estar no formato ”A x B = X”.',
+      },
+  ];
 
     return (
         <div className="pagina-ex11 pagina">
 
              <Cabecalho />
 
-            <div className='pagEx11'>
-            <Link to='/app'> <img  className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-                <h1> Exercício 11 - tabuada</h1>
-                <div className='linha1'> </div>
-                <div className='meio'>
-<p>Implemente um programa em Javascript que escreva a tabuada de um número informado pelo usuário. A mensagem deve estar no formato ”A x B = X”.</p>             
-   </div>
+             {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
 
                 <div className='final'>
                     <h3>Tabuada do:</h3>
@@ -57,7 +68,6 @@ function tabuada (){
           }
             </div>
 
-        </div>
 
     );
 

@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 
@@ -30,17 +31,30 @@ function pedidoacai ()
 
 }
 
+
+let exer = [
+  {
+    titulo: 'Exercício 03 - Valor total por quantidade',
+    cor_linha: 'azulBebe',
+    mensagem: 'Implementar um programa em Javascript para calcular o total de uma venda de açaí a partir das quantidades compradas para cada tamanho: pequeno, médio e grande, sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente',
+  },
+];
+
   return (
     <div className="pagina-ex3 pagina">
 
   <Cabecalho />
-      <div className='pagEx3'>
-        <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-        <h1> Exercício 03 - Valor total por quantidade</h1>
-        <div className='linha3'> </div>
-        <div className='meio'>
-          <p>Implementar um programa em Javascript para calcular o <b> total de uma venda de açaí</b> a partir das quantidades compradas para cada tamanho:<b> pequeno, médio e grande,</b> sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente</p>
-        </div>
+      
+  {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
 
           <div className='haha'>
           <div className='final'>
@@ -62,7 +76,7 @@ function pedidoacai ()
         <h3 className='resp'>Resultado: O total é R$ {respostaAcai}</h3>
       </div>
 
-    </div>
+   
 
   );
 

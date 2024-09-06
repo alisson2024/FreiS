@@ -4,55 +4,7 @@
     
 
     
-    .pagEx6 {
-        h1 {
-            margin-left: 120px;
-            margin-top: 40px;
-        }
-
-        .seta {
-            margin-left: 65px;
-            display: flex;
-            position: absolute;
-        }
-
-        .linha3 {
-            margin: 20px auto;
-            width: 91%;
-            height: 4px;
-            background: #FF5B37;
-            border-radius: 12px;
-        }
-
-        .meio {
-            display: flex;
-            align-items: center;
-            justify-content: center;            
-            height: 200px;
-            margin-left: 70px;
-            margin-right: 70px;
-            border-radius: 10px;
-            background-color: #ffffff;
-            
-
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16.5px;
-                line-height: 100%;
-                align-items: center;
-                margin-left:  -50px;
-            
-                color: #383131;
-
-            }
-        }
-
-        .haha {
-
-            margin-left: 150px;
-
-        }
+   
 
         .final {
            margin-left: 450px;
@@ -73,7 +25,7 @@
                     padding: 50px 50px 20px 50px; /* espaçamento interno */
                     border: 1px solid #ffffff; /* borda opcional */
                     border-radius: 8px; /* cantos arredondados */
-
+                    gap: 5px;
                 input {
                     border-radius: 10px;
                     border-style: solid ;
@@ -82,7 +34,7 @@
                     font: 400px 22px "Verdana";
                     outline: none;
                     padding: 8px 10px 8px 10px;
-                    margin-bottom: 15px;
+                    margin-bottom: 25px;
                     
 
                 }
@@ -90,7 +42,7 @@
 
             button {
                 margin-left: 270px;
-                margin-top: 50px;
+                margin-top: 30px;
                 background: #6278F7;
                 border-radius: 12px;
                 height: 60px;
@@ -113,6 +65,3 @@
     }
 
     
-
-
-}

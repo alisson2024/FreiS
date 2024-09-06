@@ -1,49 +1,7 @@
 .pagina-ex10 {
     font-family: 'Roboto', 'Arial';
     background-color: #F5F6FA;
-    .exercicio {
-        padding: 60px;
-
-        .titulo {
-            .texto {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-
-                h2 {
-                    margin-left: 10px;
-                }
-            }
-
-            .faixa {
-                background-color: brown;
-                height: 4px;
-            }
-        }
-
-        .descricao {
-            background-color: white;
-            height: 215px;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 20px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-           /* .campos {
-                width: 476px;
-                height: 170px;
-                padding: 20px;
-
-                text-align: start;
-
-                background-color: white;
-                border-radius: 12px;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
-
+    
         .formulario {
             display: flex;
             margin-top: 40px;
@@ -115,5 +73,5 @@
                 }
             }
         }
-    }
+    
 }

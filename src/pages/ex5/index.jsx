@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 export default function Ex5() {
@@ -33,19 +34,31 @@ export default function Ex5() {
             setSimOuNao('false')
         }
         
-
     }
+
+
+    let exer = [
+        {
+          titulo: 'Exercício 05 - Média de notas',
+          cor_linha: 'roxoClaro',
+          mensagem: 'Implemente um programa em Javascript para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.',
+        },
+    ];
 
     return (
         <div className="pagina-ex5 pagina">
              <Cabecalho />
 
-            <div className='pagEx5'>
-                <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-                <h1> Exercício 05 - Média de notas</h1>
-                <div className='linha3'> </div>
-                <div className='meio'>
-                    <p>Implemente um programa em Javascript para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.   </p>       </div>
+             {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
 
                 <div className='inpu'>
                     <div className='final'>
@@ -70,7 +83,7 @@ export default function Ex5() {
                 </div>
 
                 <h3 className='resp'> A média do aluno é {respostaMedia} <br/> O aluno passou ? {simOunao} </h3>
-            </div>
+           
 
         </div>
 

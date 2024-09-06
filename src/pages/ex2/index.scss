@@ -1,51 +1,7 @@
 .pagina-ex2 {
 
     background-color: #F5F6FA;
-    .pagEx2 {
-        h1 {
-            margin-left: 120px;
-            margin-top: 40px;
-        }
-
-        .seta {
-            margin-left: 65px;
-            display: flex;
-            position: absolute;
-        }
-
-        .linha2 {
-            margin: 20px auto;
-            width: 91%;
-            height: 4px;
-            background: #B3FF37;
-            border-radius: 12px;
-            
-        }
-
-        .meio {
-            background-color: rgb(240, 241, 241);
-            width: 1380px;
-            height: 200px;
-            margin-left: 70px;
-            border-radius: 10px;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            padding-left:90px ;
-
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 100%;
-                
-        
-                
-                margin-left: 210px;
-                color: #383131;
-
-            }
-        }
+   
 
         .final {
 
@@ -92,6 +48,3 @@
             height: 100px;
         }
     }
-
-
-}

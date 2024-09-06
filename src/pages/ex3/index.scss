@@ -2,55 +2,7 @@
 
     background-color: #F5F6FA;
     
-    .pagEx3 {
-        h1 {
-            margin-left: 120px;
-            margin-top: 40px;
-        }
-
-        .seta {
-            margin-left: 65px;
-            display: flex;
-            position: absolute;
-        }
-
-        .linha3 {
-            margin: 20px auto;
-            width: 91%;
-            height: 4px;
-            background: #37FFF3;
-            border-radius: 12px;
-        }
-
-        .meio {
-            background-color: rgb(240, 241, 241);
-            width: 91%;
-            height: 200px;
-            margin-left: 70px;
-            border-radius: 10px;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            padding-left: 90px;
-
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16.5px;
-                line-height: 100%;
-                align-items: center;
-                margin-left:  -50px;
-            
-                color: #383131;
-
-            }
-        }
-
-        .haha {
-
-            margin-left: 150px;
-
-        }
+   
 
         .final {
            
@@ -60,10 +12,10 @@
                 align-items: start;
                 background-color: rgb(240, 241, 241);
                 width: 880px;
-                height: 200px;
+                height: 250px;
                 
                 padding-top: 20px;
-                margin-left: 100px;
+                margin-left: 347px;
                 margin-top: 35px;
                 border-radius: 10px;
                 background-color: #ffffff;
@@ -78,7 +30,6 @@
                 .sub { 
                 display: flex;
                 gap: 50px;
-                margin-bottom: 40px;
                 height: 10px;
                 line-height: 40px;
 
@@ -87,11 +38,10 @@
                     border-radius: 20px;
                     border-style: solid;
                     border-color: #dfdfdf;
-                    border-width: 2px;
                     color: #606060;
-                    font: 400px 22px "Verdana";
+                    font: 400px 22px ;
                     outline: none;
-                    padding: 12px 0px;
+                    padding: 12px 10px 10px ;
 
                 }
             }
@@ -99,16 +49,14 @@
             button {
                 position: absolute;
                 right: 510px;
-                top: 571px;
-
+                top: 610px;
                 background: #6278F7;
                 border-radius: 12px;
                 height: 60px;
                 width: 230px;
                 color: #fff;
-                border-radius: 10px;
-                font: 500px 20px;
                 outline: none;
+                font-size: 20px;
             }
 
 
@@ -117,12 +65,10 @@
 
         .resp {
             
-            padding-left: 840px;
-            height: 100px;
+            padding-left: 900px;
+            height: 90px;
         }
     }
 
     
 
-
-}

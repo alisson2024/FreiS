@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 export default function Ex11() {
@@ -73,23 +74,30 @@ export default function Ex11() {
         setEditando(pos)
     }
 
+    let exer = [
+        {
+          titulo: 'Exercício 10 - Calculo de IMC com histórico',
+          cor_linha: 'marromClaro',
+          mensagem: 'Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação',
+        },
+    ];
+
 
     return (
 
         <div className="pagina-ex10 pagina">
             <Cabecalho />
 
-            <div className='exercicio'>
-                <div className='titulo'>
-                    <div className='texto'>
-                    <Link to='/app'> <img  className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>                        <h2>Exercício 10 - Calculo de IMC com histórico</h2>
-                    </div>
-                    <div className='faixa' />
-                </div>
-
-                <div className='descricao'>
-                    <p>Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, <b>calcule o IMC</b> e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação</p>
-                </div>
+            {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
 
                 <div className='formulario'>
                     <div className='campos'>
@@ -129,6 +137,6 @@ export default function Ex11() {
                     </div>
                 </div>
             </div>
-        </div>
+        
     )
 }

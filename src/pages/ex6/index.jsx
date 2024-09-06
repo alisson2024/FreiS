@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Cabecalho } from '../../components/cabecalho/index';
+import { CabecalhoExercico } from '../../components/CabecalhoExercicio';
 
 
 
@@ -27,22 +28,33 @@ export default function Ex6() {
         //(1000 * (10 / 100)) - 300
         setValorSalario(fim.toFixed(2));
 
-        
-
     }
+
+
+    let exer = [
+        {
+          titulo: 'Exercício 06 - Salário líquido',
+          cor_linha: 'laranjaEscuro',
+          mensagem: 'Implemente um programa em javascript para calcular o salário líquido de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais.',
+        },
+    ];
 
     return (
         <div className="pagina-ex6 pagina">
 
             <Cabecalho />
 
-            <div className='pagEx6'>
-                <Link to='/app'> <img className='seta' src="/assets/images/seta.png" alt="" width='40px' /></Link>
-                <h1> Exercício 06 - Salário líquido</h1>
-                <div className='linha3'> </div>
-                <div className='meio'>
-                    <p>Implemente um programa em javascript para calcular o salário líquido de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de <br /> descontos em reais  </p>       </div>
-
+            {
+                exer.map(
+                    Cabecalhoexercico =>
+                        <CabecalhoExercico
+                            titulo={Cabecalhoexercico.titulo}
+                            cor={Cabecalhoexercico.cor_linha}
+                            mensagem={Cabecalhoexercico.mensagem}
+                        />
+                )
+            }
+           
                 <div className='inpu'>
                     <div className='final'>
                         <div className='sub'>
@@ -66,7 +78,7 @@ export default function Ex6() {
                 </div>
 
                 <h3 className='resp'> Seu salário líquido é de R$ {valorSalario}</h3>
-            </div>
+            
 
         </div>
 
